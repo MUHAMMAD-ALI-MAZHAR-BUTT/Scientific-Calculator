@@ -1,0 +1,109 @@
+.a{
+    border: 2px solid red;
+}
+:root {
+    --black: rgb(0, 0, 0);
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --grey:#A5A5A5;
+    --yellow:rgb(255, 230, 0);
+    --orange:rgb(255, 123, 0);
+    --purple:rgb(195, 0, 255);
+  }
+  body{
+    background-color: var(--black);
+  }
+  #main-heading{
+    color: var(--white);
+  }
+.numeric-input-buttons{
+    border-radius: 100px;
+background: #333;
+color: var(--white);
+width: 80px;
+height: 80px;
+font-size: 20px;
+font-weight:200px ;
+}
+
+#cross-button{
+    width: 30px;
+}
+#cross-button:hover{
+    cursor: pointer;
+}
+.numeric-input-buttons:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.operation-input-buttons{
+    border-radius: 100px;
+background: #F89B10;
+color: var(--white);
+width: 80px;
+height: 80px;
+font-size: 20px;
+font-weight:200px ;
+}
+.operation-input-buttons:hover{
+    background-color: var(--orange);
+    color: var(--black);
+}
+.constant-input-buttons{
+    border-radius: 100px;
+background: var(--grey);
+color: var(--white);
+width: 80px;
+height: 80px;
+font-size: 20px;
+font-weight:200px ;
+}
+.custom-variable-buttons{
+    border-radius: 100px;
+background: var(--grey);
+color: var(--white);
+width: 80px;
+height: 80px;
+font-size: 20px;
+font-weight:200px ;
+}
+.calculator-container{
+    border-radius: 10px;
+    border: 1px solid var(--grey)
+}
+#input-expression{
+    background-color: transparent;
+    color: var(--white);
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+#input-expression:focus{
+    border: none;
+    outline: none;
+}
+#output{
+    background-color: transparent;
+    color: var(--white);
+    font-size: 25px;
+    border: none;
+    text-align: right;
+}
+.action-buttons{
+    background-color: var(--purple);
+    color: var(--white);
+    width: 100px;
+    height: 70px;
+    font-size: 20px;
+    font-weight:200px ;
+}
+
+#variable-name-input,#variable-value-input{
+    width: 100%;
+    height: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}

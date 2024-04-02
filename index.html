@@ -1,0 +1,93 @@
+<html>
+    <!-- Head Section -->
+    <head>
+        <title>Calculator</title>
+        <!-- Bootstrap5 cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- CSS External File link -->
+        <link rel="stylesheet" href="./assets/styling/style.css">
+
+       <!-- FontAwsome CDN -->
+       <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- Main Heading -->
+            <div class="row text-center my-5">
+                <h1 id="main-heading">Scientific Calculator</h1>
+            </div>
+         <!-- Main Body Section -->
+       <div class="row  d-flex justify-content-center">
+     <!-- Calculator Interface -->
+   <div class="col-6 calculator-container my-5 py-5">
+
+   <div class="row   my-2">
+    <div class="col-9 ">
+    <input type="text"   placeholder="Input Expression" class="w-75" id="input-expression"/>
+    <img src="./assets/images/cross.png" id="cross-button" class="mb-1"/>
+   </div>
+   </div>
+   <!-- Output Section -->
+   <div class="row  d-flex justify-content-center my-2">
+    <div class="col-9 ">
+        <input type="text" disabled   placeholder="0000" id="output"/>
+    </div>
+   </div>
+   <!-- Input Button Section -->
+   <div class=" row d-flex justify-content-center input-buttons-container">
+    <div class="col-4 " id="numeric-inputs-container"> </div>
+    <div class="col-5 " id="operation-inputs-container">  </div>
+    <div class="col-3" id="action-buttons-container"></div>
+   </div>
+   </div>
+   <!-- Calculator History Section -->
+   <div class="col-4" id="history-section">
+
+   </div>
+        </div>
+        </div>
+
+            <!-- Modal -->
+<div class="modal fade" id="showmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add New Variable</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <div class="container">
+          <div class="row m-1">
+            <div class="col-6  m-0 p-0"><h4><b>Variable : </b></h4></div>
+
+            <div class="col-6  m-0 p-0"><input type="text" id="variable-name-input"/>
+            <p id="variable-name-label"></p>
+            </div>
+          </div>
+          <div class="row m-1">
+            <div class="col-6  m-0 p-0"><h4><b>Value :</b></h4></div>
+            <div class="col-6  m-0 p-0"><input type="number" id="variable-value-input"/></div>
+          </div>
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal"  id="variable-save-button">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          <!-- Javascript File Link -->
+          <script type="module" src="./assets/js/index.js"></script>
+    </body>
+</html>
+
+
